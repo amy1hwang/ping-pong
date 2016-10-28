@@ -1,9 +1,8 @@
 var pingPongFunction = function(input) {
-  if (isNaN(input)) {
-    alert("The input you have entered is not a number. Please enter a number.");
-  } else if (input <= 0 ) {
-    alert("The input you have entered is less than or equal to 0. Please enter a number bigger than 0.");
+  if (isNaN(input) || input <= 0) {
+    alert("The input you have entered is invalid. Please enter a number greater than 0.");
   } else {
+    parseInt(input);
     var numbersArray = [];
     for(var i = 1; i <= input; i++) {
       numbersArray.push(i);
@@ -34,17 +33,17 @@ var pingPongNumbers = function(number) {
   }
 }
 
-//each element in the array is printed on <li>
-//("li").text(pingPongFunction(input))
+//i want the new result to come out but not append on the last result.
 
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
-    var input = parseInt($("#input").val());
-    var outputList= $(".output-list");
+    var input = $("#input").val();
+    var outputList = $(".output-list");
     console.log(pingPongFunction(input));
-    pingPongFunction(input).forEach(function(element) {
-      $(".output-list").append("<li>" + element + "</li>");
-    })
+    $(".output-list").html("");
+    pingPongFunction(input).forEach(function(item) {
+      $(".output-list").append("<li>" + item + "</li>");
+    });
   });
 });
