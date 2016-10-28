@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <title>Ping-Pong</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Ping-Pong</h1>
+      <h3>How to Play:</h3>
+      <ul>
+        <li>
+          Enter a number to get a range of number from 1 to the input number.
+        </li>
+        <li>
+          Numbers divisible by 3 will become "ping".
+        </li>
+        <li>
+          Numbers divisible by 5 will become"pong"
+        </li>
+        <li>
+          Numbers divisible by 15 will become "ping-pong"
+        </li>
+      </ul>
+        <form id="pingpong">
+          <label for="input">Enter a number: </label>
+          <input type="text" id="input" class="form-control" value="35"><br>
+          <button type="submit" id="submit" class="btn-primary btn">submit</button>
+        </form>
+        <br><div class="output">
+          <ul>
+
+          </ul>
+        </div>
+    </div>
+  </body>
+</html>
