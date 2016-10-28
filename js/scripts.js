@@ -14,12 +14,6 @@ var pingPongFunction = function(input) {
   return pingPongNumbersArray;
 };
 
-// var element = ""
-// for(var p = 0; p < pingPongNumbersArray.length; p++) {
-//   element = pingPongNumbersArray[p];
-// }
-// console.log(element);
-
 //replace 3x = ping, 5x = pong, 15x = ping-pong
 var pingPongNumbers = function(number) {
   if (number%3 === 0 && number%5 != 0) {
@@ -40,7 +34,6 @@ $(document).ready(function() {
     event.preventDefault();
     var input = $("#input").val();
     var outputList = $(".output-list");
-    console.log(pingPongFunction(input));
     $(".output-list").html("");
     pingPongFunction(input).forEach(function(item) {
       $(".output-list").append("<li>" + item + "</li>");
