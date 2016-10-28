@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Architects+Daughter" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
@@ -9,33 +10,53 @@
   </head>
   <body>
     <div class="container">
-      <h1>Ping-Pong</h1>
-      <h3>How to Play:</h3>
-      <ul>
-        <li>
-          Enter a number to get a range of number from 1 to the input number.
-        </li>
-        <li>
-          Numbers divisible by 3 will become "ping".
-        </li>
-        <li>
-          Numbers divisible by 5 will become"pong"
-        </li>
-        <li>
-          Numbers divisible by 15 will become "ping-pong"
-        </li>
-      </ul>
-        <form id="pingpong">
-          <label for="input">Enter a number greater than 0: </label>
-          <input type="text" id="input" class="form-control">
-          <br>
-          <button type="submit" id="submit" class="btn-primary btn">submit</button>
-        </form>
-        <br>
-        <div class="output">
-          <ul class="output-list">
-          </ul>
+        <div class="jumbotron">
+          <h1>Ping-Pong</h1>
         </div>
+        <div class="sidebar col-xs-3">
+          <h4 class="sidebar-about">About Ping Pong</h4>
+          <h4 class="sidebar-subtitle">Created by:</h4>
+          <h5 class="sidebar-info">Amy Hwang</h5>
+          <h4 class="sidebar-subtitle">GitHub Username/URL</h4>
+          <h5 class="sidebar-info"><a href="https://github.com/amy1hwang">amy1hwang</a></h5>
+          <h4 class="sidebar-subtitle">Project Description</h4>
+          <h5 class="sidebar-info">Week 3 Solo Project</h5>
+        </div>
+        <div class="main col-xs-9">
+        <img src="http://www.menshealth.com/sites/menshealth.com/files/2014/07/ping-pong.jpeg" alt="a player's hands holding a paddle and a ping-pong ball">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4>How to Play:</h4>
+          </div>
+          <div class="panel-body">
+            <ol>
+              <li>
+                Enter a number to get a range of number from 1 to the input number.
+              </li>
+              <li>
+                Numbers divisible by 3 will become "ping".
+              </li>
+              <li>
+                Numbers divisible by 5 will become"pong"
+              </li>
+              <li>
+                Numbers divisible by 15 will become "ping-pong"
+              </li>
+            </ol>
+          </div>
+        </div>
+          <form id="pingpong">
+            <label for="input">Enter a number greater than 0. : </label>
+            <input type="text" id="input" class="form-control">
+            <br>
+            <button type="submit" id="submit" class="btn-primary btn">submit</button>
+          </form>
+          <br>
+          <div class="output">
+            <ul class="output-list">
+            </ul>
+          </div>
+      </div>
     </div>
   </body>
 </html>

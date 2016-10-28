@@ -1,3 +1,48 @@
-/*.output {
-  display: none;
-}*/
+body {
+  background-color: #f4bc42;
+}
+.sidebar {
+  background-color: #337ab7;
+  border-radius: 4px;
+}
+.sidebar-about {
+  font-weight: bolder;
+}
+.sidebar-subtitle {
+  color: #f4bc42;
+}
+.sidebar-info {
+  color: #ffffff;
+}
+a {
+  color: #ffffff;
+}
+.main {
+  padding-right: 0px;
+}
+.jumbotron {
+  text-align: center;
+  background-color: #fc5a5a;
+  font-family: 'Abril Fatface', cursive;
+}
+.panel-default {
+  width: 75%;
+  height: 182px;
+  border-color: #fc9797;
+}
+.panel-default>.panel-heading {
+  background-color: #fc9797;
+  font-weight: bold;
+}
+img {
+  padding-left: 10px;
+  width: 25%;
+  height: 182px;
+  overflow: hidden;
+  border-radius: 4px;
+  float: right;
+}
+.form-control {
+  border-color: #fc9797;
+  width: 40%;
+}
