@@ -1,12 +1,19 @@
 body {
   background-color: #f4bc42;
 }
+.jumbotron {
+  text-align: center;
+  background-color: #fc5a5a;
+  font-family: 'Abril Fatface', cursive;
+}
 .sidebar {
+  width: 25%;
   background-color: #337ab7;
   border-radius: 6px;
   display: flex;
   flex-flow: column;
   height: 100%;
+  padding-left: 20px;
 }
 .sidebar-about {
   font-weight: bolder;
@@ -21,41 +28,66 @@ a {
   color: #ffffff;
 }
 .main {
+  width: 72%;
   padding-right: 0px;
-}
-.jumbotron {
-  text-align: center;
-  background-color: #fc5a5a;
-  font-family: 'Abril Fatface', cursive;
+  float: right;
 }
 .panel-default {
   border-color: #fc9797;
 }
 .panel-default>.panel-heading {
-  background-color: #fc9797;
+  background-image: url("http://365thingsaustin.com/wp-content/uploads/2016/08/WHP-Table-tennis.jpg");
   font-weight: bold;
+  color: #BA2929;
+  text-align: center;
 }
 .panel-default>.panel-body {
   display: none;
 }
+/*img {
+  width: 100%;
+}*/
 label {
   font-size: 18px;
 }
 .form-control {
   border-color: #fc9797;
-  width: 40%;
+  width: 200px;
 }
 .output {
   display: none;
   font-size: 15px;
 }
-img {
-  width: 40%;
-  overflow: hidden;
-  border-radius: 4px;
-  float: right;
-}
 .copyright {
   margin: 100px auto 100px auto;
   text-align: center;
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  .main {
+    float: none;
+    width: 100%;
+  }
+  .sidebar {
+    width: 100%;
+    margin-top: 40px;
+  }
+  img {
+    text-align: center;
+    float: none;
+  }
+  .copyright {
+    margin: 50px auto 100px auto;
+  }
+}
+
+@media screen and (max-width: 1100px) and (min-width: 479px) {
+  .main {
+    float: none;
+    width: 100%;
+  }
+  .sidebar {
+    width: 100%;
+    margin-top: 40px;
+  }
 }

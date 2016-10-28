@@ -32,9 +32,9 @@ var pingPongNumbers = function(number) {
 
 //User Interface Logic
 $(document).ready(function() {
-  $(".panel-heading").click(function(event) {
+  $(".panel-default>.panel-heading").click(function(event) {
     event.preventDefault();
-    $(".panel-body").slideToggle();
+    $(".panel-default>.panel-body").slideToggle();
   });
   $("form").submit(function(event) {
     event.preventDefault();
