@@ -22,9 +22,9 @@ var pingPongNumbers = function(number) {
   if (number%3 === 0 && number%5 != 0) {
     return "ping";
   } else if (number%5 === 0 && number%3 != 0) {
-    return "pong"
+    return "pong";
   } else if (number%3 === 0 && number%5 === 0) {
-    return "ping-pong"
+    return "ping-pong";
   } else {
     return number;
   }
@@ -32,6 +32,10 @@ var pingPongNumbers = function(number) {
 
 //User Interface Logic
 $(document).ready(function() {
+  $(".panel-heading").click(function(event) {
+    event.preventDefault();
+    $(".panel-body").slideToggle();
+  });
   $("form").submit(function(event) {
     event.preventDefault();
     var input = $("#input").val();
@@ -42,5 +46,6 @@ $(document).ready(function() {
     pingPongFunction(input).forEach(function(item) {
       $(".output-list").append("<li>" + item + "</li>");
     });
+    $(".output").slideDown();
   });
 });
