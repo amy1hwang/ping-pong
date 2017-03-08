@@ -33,7 +33,7 @@ This webpage takes a number from a user and returns a range of numbers from 1 to
   * output: [1, 2, "ping", 4, "pong", 6, 7, 8, "ping", "pong", 11, "ping", 13, 14, "ping-pong"]
 
 # link to site on GitHub Pages
-https://amy1hwang.github.io/pingpong
+https://amy1hwang.github.io/ping-pong
 
 # copyright and license information
 Copyright (c) 2016 Amy Hwang. This software is licensed under the Github license.
