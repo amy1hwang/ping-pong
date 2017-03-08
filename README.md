@@ -1,5 +1,5 @@
 # PingPong
-## by Amy Hwang | 10.28.201
+## by Amy Hwang | 10.28.2016
 
 # description of program
 This webpage takes a number from a user and returns a range of numbers from 1 to the user input except for the follow exceptions:
