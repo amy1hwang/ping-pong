@@ -1,11 +1,13 @@
-# Ping-Pong
-## by Amy Hwang
+# PingPong
+## by Amy Hwang | 10.28.201
 
 # description of program
 This webpage takes a number from a user and returns a range of numbers from 1 to the user input except for the follow exceptions:
   * Numbers divisible by 3 are replaced with "ping"
   * Numbers divisible by 5 are replaced with "pong"
   * Numbers divisible by 15 are replaced with "ping-pong"
+
+This webpage is responsive to various screen sizes.
 
 # program setup instructions
 * Clone this repository.
